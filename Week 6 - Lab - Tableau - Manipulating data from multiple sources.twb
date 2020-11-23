@@ -1,0 +1,1065 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1110.1623                               -->
+<workbook original-version='18.1' source-build='2020.3.3 (20203.20.1110.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Union+ (nz_water_water_resources)' inline='true' name='federated.13d8rsc1hnkx1919my5wd1l9utvd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nz_water_water_resources' name='pdf.06ptgzo0f02b5m10ah1dz154efax'>
+            <connection class='pdf' cleaning='yes' compat='no' dataRefreshTime='' interpretationMode='257' origfilename='C:/Users/jaanu/Ironhack Course Work/Week 6/lab-tableau-manipulating-data-from-multiple-sources/files_for_lab/nz_water_water_resources.pdf' password='' pgFrom='14' pgTo='14' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='integer' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2001]' />
+            <value name='[2008]' />
+            <value name='[2005]' />
+            <value name='[2007]' />
+            <value name='[2003]' />
+            <value name='[2006]' />
+            <value name='[1997]' />
+            <value name='[1998]' />
+            <value name='[2002]' />
+            <value name='[2010]' />
+            <value name='[2000]' />
+            <value name='[2009]' />
+            <value name='[1999]' />
+            <value name='[2004]' />
+            <value name='[1995]' />
+            <value name='[1996]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Project].[432,572 &amp; F8]' />
+              <field name='[Project].[443,190 &amp; F15]' />
+              <field name='[Project].[450,462 &amp; F12]' />
+              <field name='[Project].[455,871 &amp; F14]' />
+              <field name='[Project].[457,162 &amp; F10]' />
+              <field name='[Project].[469,926 &amp; F13]' />
+              <field name='[Project].[476,907 &amp; F4]' />
+              <field name='[Project].[482,803 &amp; F5]' />
+              <field name='[Project].[490,035 &amp; F9]' />
+              <field name='[Project].[495,729 &amp; F17]' />
+              <field name='[Project].[498,374 &amp; F7]' />
+              <field name='[Project].[529,105 &amp; F16]' />
+              <field name='[Project].[531,872 &amp; F6]' />
+              <field name='[Project].[536,302 &amp; F11]' />
+              <field name='[Project].[558,532 &amp; F2]' />
+              <field name='[Project].[574,722 &amp; F3]' />
+            </group>
+          </groups>
+          <relation type='project'>
+            <columns>
+              <column caption='To sea and net abstraction' hidden='true' name='[Union].[To sea and net abstraction]' />
+              <column caption='Inflow s' hidden='true' name='[Union].[Inflow s]' />
+              <column name='[Project].[Inflow s &amp; To sea and net abstraction]' project-type='coalesce' />
+            </columns>
+            <bindings>
+              <binding expression='IF NOT ISNULL([Union].[To sea and net abstraction]) THEN [Union].[To sea and net abstraction]&#10;ELSEIF NOT ISNULL([Union].[Inflow s]) THEN [Union].[Inflow s]&#10;ELSE NULL&#10;END' name='[Project].[Inflow s &amp; To sea and net abstraction]' />
+            </bindings>
+            <relation type='project'>
+              <columns>
+                <column caption='558,532' hidden='true' name='[Union].[558,532]' />
+                <column caption='F2' hidden='true' name='[Union].[F2]' />
+                <column name='[Project].[558,532 &amp; F2]' project-type='coalesce' />
+              </columns>
+              <bindings>
+                <binding expression='IF NOT ISNULL([Union].[558,532]) THEN [Union].[558,532]&#10;ELSEIF NOT ISNULL([Union].[F2]) THEN [Union].[F2]&#10;ELSE NULL&#10;END' name='[Project].[558,532 &amp; F2]' />
+              </bindings>
+              <relation type='project'>
+                <columns>
+                  <column caption='574,722' hidden='true' name='[Union].[574,722]' />
+                  <column caption='F3' hidden='true' name='[Union].[F3]' />
+                  <column name='[Project].[574,722 &amp; F3]' project-type='coalesce' />
+                </columns>
+                <bindings>
+                  <binding expression='IF NOT ISNULL([Union].[574,722]) THEN [Union].[574,722]&#10;ELSEIF NOT ISNULL([Union].[F3]) THEN [Union].[F3]&#10;ELSE NULL&#10;END' name='[Project].[574,722 &amp; F3]' />
+                </bindings>
+                <relation type='project'>
+                  <columns>
+                    <column caption='476,907' hidden='true' name='[Union].[476,907]' />
+                    <column caption='F4' hidden='true' name='[Union].[F4]' />
+                    <column name='[Project].[476,907 &amp; F4]' project-type='coalesce' />
+                  </columns>
+                  <bindings>
+                    <binding expression='IF NOT ISNULL([Union].[476,907]) THEN [Union].[476,907]&#10;ELSEIF NOT ISNULL([Union].[F4]) THEN [Union].[F4]&#10;ELSE NULL&#10;END' name='[Project].[476,907 &amp; F4]' />
+                  </bindings>
+                  <relation type='project'>
+                    <columns>
+                      <column caption='482,803' hidden='true' name='[Union].[482,803]' />
+                      <column caption='F5' hidden='true' name='[Union].[F5]' />
+                      <column name='[Project].[482,803 &amp; F5]' project-type='coalesce' />
+                    </columns>
+                    <bindings>
+                      <binding expression='IF NOT ISNULL([Union].[482,803]) THEN [Union].[482,803]&#10;ELSEIF NOT ISNULL([Union].[F5]) THEN [Union].[F5]&#10;ELSE NULL&#10;END' name='[Project].[482,803 &amp; F5]' />
+                    </bindings>
+                    <relation type='project'>
+                      <columns>
+                        <column caption='531,872' hidden='true' name='[Union].[531,872]' />
+                        <column caption='F6' hidden='true' name='[Union].[F6]' />
+                        <column name='[Project].[531,872 &amp; F6]' project-type='coalesce' />
+                      </columns>
+                      <bindings>
+                        <binding expression='IF NOT ISNULL([Union].[531,872]) THEN [Union].[531,872]&#10;ELSEIF NOT ISNULL([Union].[F6]) THEN [Union].[F6]&#10;ELSE NULL&#10;END' name='[Project].[531,872 &amp; F6]' />
+                      </bindings>
+                      <relation type='project'>
+                        <columns>
+                          <column caption='498,374' hidden='true' name='[Union].[498,374]' />
+                          <column caption='F7' hidden='true' name='[Union].[F7]' />
+                          <column name='[Project].[498,374 &amp; F7]' project-type='coalesce' />
+                        </columns>
+                        <bindings>
+                          <binding expression='IF NOT ISNULL([Union].[498,374]) THEN [Union].[498,374]&#10;ELSEIF NOT ISNULL([Union].[F7]) THEN [Union].[F7]&#10;ELSE NULL&#10;END' name='[Project].[498,374 &amp; F7]' />
+                        </bindings>
+                        <relation type='project'>
+                          <columns>
+                            <column caption='432,572' hidden='true' name='[Union].[432,572]' />
+                            <column caption='F8' hidden='true' name='[Union].[F8]' />
+                            <column name='[Project].[432,572 &amp; F8]' project-type='coalesce' />
+                          </columns>
+                          <bindings>
+                            <binding expression='IF NOT ISNULL([Union].[432,572]) THEN [Union].[432,572]&#10;ELSEIF NOT ISNULL([Union].[F8]) THEN [Union].[F8]&#10;ELSE NULL&#10;END' name='[Project].[432,572 &amp; F8]' />
+                          </bindings>
+                          <relation type='project'>
+                            <columns>
+                              <column caption='490,035' hidden='true' name='[Union].[490,035]' />
+                              <column caption='F9' hidden='true' name='[Union].[F9]' />
+                              <column name='[Project].[490,035 &amp; F9]' project-type='coalesce' />
+                            </columns>
+                            <bindings>
+                              <binding expression='IF NOT ISNULL([Union].[490,035]) THEN [Union].[490,035]&#10;ELSEIF NOT ISNULL([Union].[F9]) THEN [Union].[F9]&#10;ELSE NULL&#10;END' name='[Project].[490,035 &amp; F9]' />
+                            </bindings>
+                            <relation type='project'>
+                              <columns>
+                                <column caption='457,162' hidden='true' name='[Union].[457,162]' />
+                                <column caption='F10' hidden='true' name='[Union].[F10]' />
+                                <column name='[Project].[457,162 &amp; F10]' project-type='coalesce' />
+                              </columns>
+                              <bindings>
+                                <binding expression='IF NOT ISNULL([Union].[457,162]) THEN [Union].[457,162]&#10;ELSEIF NOT ISNULL([Union].[F10]) THEN [Union].[F10]&#10;ELSE NULL&#10;END' name='[Project].[457,162 &amp; F10]' />
+                              </bindings>
+                              <relation type='project'>
+                                <columns>
+                                  <column caption='536,302' hidden='true' name='[Union].[536,302]' />
+                                  <column caption='F11' hidden='true' name='[Union].[F11]' />
+                                  <column name='[Project].[536,302 &amp; F11]' project-type='coalesce' />
+                                </columns>
+                                <bindings>
+                                  <binding expression='IF NOT ISNULL([Union].[536,302]) THEN [Union].[536,302]&#10;ELSEIF NOT ISNULL([Union].[F11]) THEN [Union].[F11]&#10;ELSE NULL&#10;END' name='[Project].[536,302 &amp; F11]' />
+                                </bindings>
+                                <relation type='project'>
+                                  <columns>
+                                    <column caption='450,462' hidden='true' name='[Union].[450,462]' />
+                                    <column caption='F12' hidden='true' name='[Union].[F12]' />
+                                    <column name='[Project].[450,462 &amp; F12]' project-type='coalesce' />
+                                  </columns>
+                                  <bindings>
+                                    <binding expression='IF NOT ISNULL([Union].[450,462]) THEN [Union].[450,462]&#10;ELSEIF NOT ISNULL([Union].[F12]) THEN [Union].[F12]&#10;ELSE NULL&#10;END' name='[Project].[450,462 &amp; F12]' />
+                                  </bindings>
+                                  <relation type='project'>
+                                    <columns>
+                                      <column caption='469,926' hidden='true' name='[Union].[469,926]' />
+                                      <column caption='F13' hidden='true' name='[Union].[F13]' />
+                                      <column name='[Project].[469,926 &amp; F13]' project-type='coalesce' />
+                                    </columns>
+                                    <bindings>
+                                      <binding expression='IF NOT ISNULL([Union].[469,926]) THEN [Union].[469,926]&#10;ELSEIF NOT ISNULL([Union].[F13]) THEN [Union].[F13]&#10;ELSE NULL&#10;END' name='[Project].[469,926 &amp; F13]' />
+                                    </bindings>
+                                    <relation type='project'>
+                                      <columns>
+                                        <column caption='455,871' hidden='true' name='[Union].[455,871]' />
+                                        <column caption='F14' hidden='true' name='[Union].[F14]' />
+                                        <column name='[Project].[455,871 &amp; F14]' project-type='coalesce' />
+                                      </columns>
+                                      <bindings>
+                                        <binding expression='IF NOT ISNULL([Union].[455,871]) THEN [Union].[455,871]&#10;ELSEIF NOT ISNULL([Union].[F14]) THEN [Union].[F14]&#10;ELSE NULL&#10;END' name='[Project].[455,871 &amp; F14]' />
+                                      </bindings>
+                                      <relation type='project'>
+                                        <columns>
+                                          <column caption='443,190' hidden='true' name='[Union].[443,190]' />
+                                          <column caption='F15' hidden='true' name='[Union].[F15]' />
+                                          <column name='[Project].[443,190 &amp; F15]' project-type='coalesce' />
+                                        </columns>
+                                        <bindings>
+                                          <binding expression='IF NOT ISNULL([Union].[443,190]) THEN [Union].[443,190]&#10;ELSEIF NOT ISNULL([Union].[F15]) THEN [Union].[F15]&#10;ELSE NULL&#10;END' name='[Project].[443,190 &amp; F15]' />
+                                        </bindings>
+                                        <relation type='project'>
+                                          <columns>
+                                            <column caption='529,105' hidden='true' name='[Union].[529,105]' />
+                                            <column caption='F16' hidden='true' name='[Union].[F16]' />
+                                            <column name='[Project].[529,105 &amp; F16]' project-type='coalesce' />
+                                          </columns>
+                                          <bindings>
+                                            <binding expression='IF NOT ISNULL([Union].[529,105]) THEN [Union].[529,105]&#10;ELSEIF NOT ISNULL([Union].[F16]) THEN [Union].[F16]&#10;ELSE NULL&#10;END' name='[Project].[529,105 &amp; F16]' />
+                                          </bindings>
+                                          <relation type='project'>
+                                            <columns>
+                                              <column caption='495,729' hidden='true' name='[Union].[495,729]' />
+                                              <column caption='F17' hidden='true' name='[Union].[F17]' />
+                                              <column name='[Project].[495,729 &amp; F17]' project-type='coalesce' />
+                                            </columns>
+                                            <bindings>
+                                              <binding expression='IF NOT ISNULL([Union].[495,729]) THEN [Union].[495,729]&#10;ELSEIF NOT ISNULL([Union].[F17]) THEN [Union].[F17]&#10;ELSE NULL&#10;END' name='[Project].[495,729 &amp; F17]' />
+                                            </bindings>
+                                            <relation all='true' name='Union' type='union'>
+                                              <columns>
+                                                <column datatype='string' name='To sea and net abstraction' />
+                                                <column datatype='integer' name='558,532' />
+                                                <column datatype='integer' name='574,722' />
+                                                <column datatype='integer' name='476,907' />
+                                                <column datatype='integer' name='482,803' />
+                                                <column datatype='integer' name='531,872' />
+                                                <column datatype='integer' name='498,374' />
+                                                <column datatype='integer' name='432,572' />
+                                                <column datatype='integer' name='490,035' />
+                                                <column datatype='integer' name='457,162' />
+                                                <column datatype='integer' name='536,302' />
+                                                <column datatype='integer' name='450,462' />
+                                                <column datatype='integer' name='469,926' />
+                                                <column datatype='integer' name='455,871' />
+                                                <column datatype='integer' name='443,190' />
+                                                <column datatype='integer' name='529,105' />
+                                                <column datatype='integer' name='495,729' />
+                                                <column datatype='string' name='Inflow s' />
+                                                <column datatype='integer' name='F2' />
+                                                <column datatype='integer' name='F3' />
+                                                <column datatype='integer' name='F4' />
+                                                <column datatype='integer' name='F5' />
+                                                <column datatype='integer' name='F6' />
+                                                <column datatype='integer' name='F7' />
+                                                <column datatype='integer' name='F8' />
+                                                <column datatype='integer' name='F9' />
+                                                <column datatype='integer' name='F10' />
+                                                <column datatype='integer' name='F11' />
+                                                <column datatype='integer' name='F12' />
+                                                <column datatype='integer' name='F13' />
+                                                <column datatype='integer' name='F14' />
+                                                <column datatype='integer' name='F15' />
+                                                <column datatype='integer' name='F16' />
+                                                <column datatype='integer' name='F17' />
+                                                <column datatype='string' name='Table Name' />
+                                              </columns>
+                                              <relation connection='pdf.06ptgzo0f02b5m10ah1dz154efax' name='Page   14 Table  2' table='[&apos;Page   14 Table  2$&apos;]' type='table'>
+                                                <columns gridOrigin='A1:Q9:no:A1:Q9:0' outcome='2'>
+                                                  <column datatype='string' name='To sea and net abstraction' ordinal='0' />
+                                                  <column datatype='integer' name='558,532' ordinal='1' />
+                                                  <column datatype='integer' name='574,722' ordinal='2' />
+                                                  <column datatype='integer' name='476,907' ordinal='3' />
+                                                  <column datatype='integer' name='482,803' ordinal='4' />
+                                                  <column datatype='integer' name='531,872' ordinal='5' />
+                                                  <column datatype='integer' name='498,374' ordinal='6' />
+                                                  <column datatype='integer' name='432,572' ordinal='7' />
+                                                  <column datatype='integer' name='490,035' ordinal='8' />
+                                                  <column datatype='integer' name='457,162' ordinal='9' />
+                                                  <column datatype='integer' name='536,302' ordinal='10' />
+                                                  <column datatype='integer' name='450,462' ordinal='11' />
+                                                  <column datatype='integer' name='469,926' ordinal='12' />
+                                                  <column datatype='integer' name='455,871' ordinal='13' />
+                                                  <column datatype='integer' name='443,190' ordinal='14' />
+                                                  <column datatype='integer' name='529,105' ordinal='15' />
+                                                  <column datatype='integer' name='495,729' ordinal='16' />
+                                                </columns>
+                                              </relation>
+                                              <relation connection='pdf.06ptgzo0f02b5m10ah1dz154efax' name='Page   14 Table  3' table='[&apos;Page   14 Table  3$&apos;]' type='table'>
+                                                <columns gridOrigin='A1:Q10:no:A1:Q10:1' lost='0' outcome='1' processed='80'>
+                                                  <column datatype='string' name='Inflow s' ordinal='0' />
+                                                  <column datatype='integer' name='F2' ordinal='1' />
+                                                  <column datatype='integer' name='F3' ordinal='2' />
+                                                  <column datatype='integer' name='F4' ordinal='3' />
+                                                  <column datatype='integer' name='F5' ordinal='4' />
+                                                  <column datatype='integer' name='F6' ordinal='5' />
+                                                  <column datatype='integer' name='F7' ordinal='6' />
+                                                  <column datatype='integer' name='F8' ordinal='7' />
+                                                  <column datatype='integer' name='F9' ordinal='8' />
+                                                  <column datatype='integer' name='F10' ordinal='9' />
+                                                  <column datatype='integer' name='F11' ordinal='10' />
+                                                  <column datatype='integer' name='F12' ordinal='11' />
+                                                  <column datatype='integer' name='F13' ordinal='12' />
+                                                  <column datatype='integer' name='F14' ordinal='13' />
+                                                  <column datatype='integer' name='F15' ordinal='14' />
+                                                  <column datatype='integer' name='F16' ordinal='15' />
+                                                  <column datatype='integer' name='F17' ordinal='16' />
+                                                </columns>
+                                              </relation>
+                                            </relation>
+                                          </relation>
+                                        </relation>
+                                      </relation>
+                                    </relation>
+                                  </relation>
+                                </relation>
+                              </relation>
+                            </relation>
+                          </relation>
+                        </relation>
+                      </relation>
+                    </relation>
+                  </relation>
+                </relation>
+              </relation>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='integer' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2001]' />
+            <value name='[2008]' />
+            <value name='[2005]' />
+            <value name='[2007]' />
+            <value name='[2003]' />
+            <value name='[2006]' />
+            <value name='[1997]' />
+            <value name='[1998]' />
+            <value name='[2002]' />
+            <value name='[2010]' />
+            <value name='[2000]' />
+            <value name='[2009]' />
+            <value name='[1999]' />
+            <value name='[2004]' />
+            <value name='[1995]' />
+            <value name='[1996]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Project].[432,572 &amp; F8]' />
+              <field name='[Project].[443,190 &amp; F15]' />
+              <field name='[Project].[450,462 &amp; F12]' />
+              <field name='[Project].[455,871 &amp; F14]' />
+              <field name='[Project].[457,162 &amp; F10]' />
+              <field name='[Project].[469,926 &amp; F13]' />
+              <field name='[Project].[476,907 &amp; F4]' />
+              <field name='[Project].[482,803 &amp; F5]' />
+              <field name='[Project].[490,035 &amp; F9]' />
+              <field name='[Project].[495,729 &amp; F17]' />
+              <field name='[Project].[498,374 &amp; F7]' />
+              <field name='[Project].[529,105 &amp; F16]' />
+              <field name='[Project].[531,872 &amp; F6]' />
+              <field name='[Project].[536,302 &amp; F11]' />
+              <field name='[Project].[558,532 &amp; F2]' />
+              <field name='[Project].[574,722 &amp; F3]' />
+            </group>
+          </groups>
+          <relation type='project'>
+            <columns>
+              <column caption='To sea and net abstraction' hidden='true' name='[Union].[To sea and net abstraction]' />
+              <column caption='Inflow s' hidden='true' name='[Union].[Inflow s]' />
+              <column name='[Project].[Inflow s &amp; To sea and net abstraction]' project-type='coalesce' />
+            </columns>
+            <bindings>
+              <binding expression='IF NOT ISNULL([Union].[To sea and net abstraction]) THEN [Union].[To sea and net abstraction]&#10;ELSEIF NOT ISNULL([Union].[Inflow s]) THEN [Union].[Inflow s]&#10;ELSE NULL&#10;END' name='[Project].[Inflow s &amp; To sea and net abstraction]' />
+            </bindings>
+            <relation type='project'>
+              <columns>
+                <column caption='558,532' hidden='true' name='[Union].[558,532]' />
+                <column caption='F2' hidden='true' name='[Union].[F2]' />
+                <column name='[Project].[558,532 &amp; F2]' project-type='coalesce' />
+              </columns>
+              <bindings>
+                <binding expression='IF NOT ISNULL([Union].[558,532]) THEN [Union].[558,532]&#10;ELSEIF NOT ISNULL([Union].[F2]) THEN [Union].[F2]&#10;ELSE NULL&#10;END' name='[Project].[558,532 &amp; F2]' />
+              </bindings>
+              <relation type='project'>
+                <columns>
+                  <column caption='574,722' hidden='true' name='[Union].[574,722]' />
+                  <column caption='F3' hidden='true' name='[Union].[F3]' />
+                  <column name='[Project].[574,722 &amp; F3]' project-type='coalesce' />
+                </columns>
+                <bindings>
+                  <binding expression='IF NOT ISNULL([Union].[574,722]) THEN [Union].[574,722]&#10;ELSEIF NOT ISNULL([Union].[F3]) THEN [Union].[F3]&#10;ELSE NULL&#10;END' name='[Project].[574,722 &amp; F3]' />
+                </bindings>
+                <relation type='project'>
+                  <columns>
+                    <column caption='476,907' hidden='true' name='[Union].[476,907]' />
+                    <column caption='F4' hidden='true' name='[Union].[F4]' />
+                    <column name='[Project].[476,907 &amp; F4]' project-type='coalesce' />
+                  </columns>
+                  <bindings>
+                    <binding expression='IF NOT ISNULL([Union].[476,907]) THEN [Union].[476,907]&#10;ELSEIF NOT ISNULL([Union].[F4]) THEN [Union].[F4]&#10;ELSE NULL&#10;END' name='[Project].[476,907 &amp; F4]' />
+                  </bindings>
+                  <relation type='project'>
+                    <columns>
+                      <column caption='482,803' hidden='true' name='[Union].[482,803]' />
+                      <column caption='F5' hidden='true' name='[Union].[F5]' />
+                      <column name='[Project].[482,803 &amp; F5]' project-type='coalesce' />
+                    </columns>
+                    <bindings>
+                      <binding expression='IF NOT ISNULL([Union].[482,803]) THEN [Union].[482,803]&#10;ELSEIF NOT ISNULL([Union].[F5]) THEN [Union].[F5]&#10;ELSE NULL&#10;END' name='[Project].[482,803 &amp; F5]' />
+                    </bindings>
+                    <relation type='project'>
+                      <columns>
+                        <column caption='531,872' hidden='true' name='[Union].[531,872]' />
+                        <column caption='F6' hidden='true' name='[Union].[F6]' />
+                        <column name='[Project].[531,872 &amp; F6]' project-type='coalesce' />
+                      </columns>
+                      <bindings>
+                        <binding expression='IF NOT ISNULL([Union].[531,872]) THEN [Union].[531,872]&#10;ELSEIF NOT ISNULL([Union].[F6]) THEN [Union].[F6]&#10;ELSE NULL&#10;END' name='[Project].[531,872 &amp; F6]' />
+                      </bindings>
+                      <relation type='project'>
+                        <columns>
+                          <column caption='498,374' hidden='true' name='[Union].[498,374]' />
+                          <column caption='F7' hidden='true' name='[Union].[F7]' />
+                          <column name='[Project].[498,374 &amp; F7]' project-type='coalesce' />
+                        </columns>
+                        <bindings>
+                          <binding expression='IF NOT ISNULL([Union].[498,374]) THEN [Union].[498,374]&#10;ELSEIF NOT ISNULL([Union].[F7]) THEN [Union].[F7]&#10;ELSE NULL&#10;END' name='[Project].[498,374 &amp; F7]' />
+                        </bindings>
+                        <relation type='project'>
+                          <columns>
+                            <column caption='432,572' hidden='true' name='[Union].[432,572]' />
+                            <column caption='F8' hidden='true' name='[Union].[F8]' />
+                            <column name='[Project].[432,572 &amp; F8]' project-type='coalesce' />
+                          </columns>
+                          <bindings>
+                            <binding expression='IF NOT ISNULL([Union].[432,572]) THEN [Union].[432,572]&#10;ELSEIF NOT ISNULL([Union].[F8]) THEN [Union].[F8]&#10;ELSE NULL&#10;END' name='[Project].[432,572 &amp; F8]' />
+                          </bindings>
+                          <relation type='project'>
+                            <columns>
+                              <column caption='490,035' hidden='true' name='[Union].[490,035]' />
+                              <column caption='F9' hidden='true' name='[Union].[F9]' />
+                              <column name='[Project].[490,035 &amp; F9]' project-type='coalesce' />
+                            </columns>
+                            <bindings>
+                              <binding expression='IF NOT ISNULL([Union].[490,035]) THEN [Union].[490,035]&#10;ELSEIF NOT ISNULL([Union].[F9]) THEN [Union].[F9]&#10;ELSE NULL&#10;END' name='[Project].[490,035 &amp; F9]' />
+                            </bindings>
+                            <relation type='project'>
+                              <columns>
+                                <column caption='457,162' hidden='true' name='[Union].[457,162]' />
+                                <column caption='F10' hidden='true' name='[Union].[F10]' />
+                                <column name='[Project].[457,162 &amp; F10]' project-type='coalesce' />
+                              </columns>
+                              <bindings>
+                                <binding expression='IF NOT ISNULL([Union].[457,162]) THEN [Union].[457,162]&#10;ELSEIF NOT ISNULL([Union].[F10]) THEN [Union].[F10]&#10;ELSE NULL&#10;END' name='[Project].[457,162 &amp; F10]' />
+                              </bindings>
+                              <relation type='project'>
+                                <columns>
+                                  <column caption='536,302' hidden='true' name='[Union].[536,302]' />
+                                  <column caption='F11' hidden='true' name='[Union].[F11]' />
+                                  <column name='[Project].[536,302 &amp; F11]' project-type='coalesce' />
+                                </columns>
+                                <bindings>
+                                  <binding expression='IF NOT ISNULL([Union].[536,302]) THEN [Union].[536,302]&#10;ELSEIF NOT ISNULL([Union].[F11]) THEN [Union].[F11]&#10;ELSE NULL&#10;END' name='[Project].[536,302 &amp; F11]' />
+                                </bindings>
+                                <relation type='project'>
+                                  <columns>
+                                    <column caption='450,462' hidden='true' name='[Union].[450,462]' />
+                                    <column caption='F12' hidden='true' name='[Union].[F12]' />
+                                    <column name='[Project].[450,462 &amp; F12]' project-type='coalesce' />
+                                  </columns>
+                                  <bindings>
+                                    <binding expression='IF NOT ISNULL([Union].[450,462]) THEN [Union].[450,462]&#10;ELSEIF NOT ISNULL([Union].[F12]) THEN [Union].[F12]&#10;ELSE NULL&#10;END' name='[Project].[450,462 &amp; F12]' />
+                                  </bindings>
+                                  <relation type='project'>
+                                    <columns>
+                                      <column caption='469,926' hidden='true' name='[Union].[469,926]' />
+                                      <column caption='F13' hidden='true' name='[Union].[F13]' />
+                                      <column name='[Project].[469,926 &amp; F13]' project-type='coalesce' />
+                                    </columns>
+                                    <bindings>
+                                      <binding expression='IF NOT ISNULL([Union].[469,926]) THEN [Union].[469,926]&#10;ELSEIF NOT ISNULL([Union].[F13]) THEN [Union].[F13]&#10;ELSE NULL&#10;END' name='[Project].[469,926 &amp; F13]' />
+                                    </bindings>
+                                    <relation type='project'>
+                                      <columns>
+                                        <column caption='455,871' hidden='true' name='[Union].[455,871]' />
+                                        <column caption='F14' hidden='true' name='[Union].[F14]' />
+                                        <column name='[Project].[455,871 &amp; F14]' project-type='coalesce' />
+                                      </columns>
+                                      <bindings>
+                                        <binding expression='IF NOT ISNULL([Union].[455,871]) THEN [Union].[455,871]&#10;ELSEIF NOT ISNULL([Union].[F14]) THEN [Union].[F14]&#10;ELSE NULL&#10;END' name='[Project].[455,871 &amp; F14]' />
+                                      </bindings>
+                                      <relation type='project'>
+                                        <columns>
+                                          <column caption='443,190' hidden='true' name='[Union].[443,190]' />
+                                          <column caption='F15' hidden='true' name='[Union].[F15]' />
+                                          <column name='[Project].[443,190 &amp; F15]' project-type='coalesce' />
+                                        </columns>
+                                        <bindings>
+                                          <binding expression='IF NOT ISNULL([Union].[443,190]) THEN [Union].[443,190]&#10;ELSEIF NOT ISNULL([Union].[F15]) THEN [Union].[F15]&#10;ELSE NULL&#10;END' name='[Project].[443,190 &amp; F15]' />
+                                        </bindings>
+                                        <relation type='project'>
+                                          <columns>
+                                            <column caption='529,105' hidden='true' name='[Union].[529,105]' />
+                                            <column caption='F16' hidden='true' name='[Union].[F16]' />
+                                            <column name='[Project].[529,105 &amp; F16]' project-type='coalesce' />
+                                          </columns>
+                                          <bindings>
+                                            <binding expression='IF NOT ISNULL([Union].[529,105]) THEN [Union].[529,105]&#10;ELSEIF NOT ISNULL([Union].[F16]) THEN [Union].[F16]&#10;ELSE NULL&#10;END' name='[Project].[529,105 &amp; F16]' />
+                                          </bindings>
+                                          <relation type='project'>
+                                            <columns>
+                                              <column caption='495,729' hidden='true' name='[Union].[495,729]' />
+                                              <column caption='F17' hidden='true' name='[Union].[F17]' />
+                                              <column name='[Project].[495,729 &amp; F17]' project-type='coalesce' />
+                                            </columns>
+                                            <bindings>
+                                              <binding expression='IF NOT ISNULL([Union].[495,729]) THEN [Union].[495,729]&#10;ELSEIF NOT ISNULL([Union].[F17]) THEN [Union].[F17]&#10;ELSE NULL&#10;END' name='[Project].[495,729 &amp; F17]' />
+                                            </bindings>
+                                            <relation all='true' name='Union' type='union'>
+                                              <columns>
+                                                <column datatype='string' name='To sea and net abstraction' />
+                                                <column datatype='integer' name='558,532' />
+                                                <column datatype='integer' name='574,722' />
+                                                <column datatype='integer' name='476,907' />
+                                                <column datatype='integer' name='482,803' />
+                                                <column datatype='integer' name='531,872' />
+                                                <column datatype='integer' name='498,374' />
+                                                <column datatype='integer' name='432,572' />
+                                                <column datatype='integer' name='490,035' />
+                                                <column datatype='integer' name='457,162' />
+                                                <column datatype='integer' name='536,302' />
+                                                <column datatype='integer' name='450,462' />
+                                                <column datatype='integer' name='469,926' />
+                                                <column datatype='integer' name='455,871' />
+                                                <column datatype='integer' name='443,190' />
+                                                <column datatype='integer' name='529,105' />
+                                                <column datatype='integer' name='495,729' />
+                                                <column datatype='string' name='Inflow s' />
+                                                <column datatype='integer' name='F2' />
+                                                <column datatype='integer' name='F3' />
+                                                <column datatype='integer' name='F4' />
+                                                <column datatype='integer' name='F5' />
+                                                <column datatype='integer' name='F6' />
+                                                <column datatype='integer' name='F7' />
+                                                <column datatype='integer' name='F8' />
+                                                <column datatype='integer' name='F9' />
+                                                <column datatype='integer' name='F10' />
+                                                <column datatype='integer' name='F11' />
+                                                <column datatype='integer' name='F12' />
+                                                <column datatype='integer' name='F13' />
+                                                <column datatype='integer' name='F14' />
+                                                <column datatype='integer' name='F15' />
+                                                <column datatype='integer' name='F16' />
+                                                <column datatype='integer' name='F17' />
+                                                <column datatype='string' name='Table Name' />
+                                              </columns>
+                                              <relation connection='pdf.06ptgzo0f02b5m10ah1dz154efax' name='Page   14 Table  2' table='[&apos;Page   14 Table  2$&apos;]' type='table'>
+                                                <columns gridOrigin='A1:Q9:no:A1:Q9:0' outcome='2'>
+                                                  <column datatype='string' name='To sea and net abstraction' ordinal='0' />
+                                                  <column datatype='integer' name='558,532' ordinal='1' />
+                                                  <column datatype='integer' name='574,722' ordinal='2' />
+                                                  <column datatype='integer' name='476,907' ordinal='3' />
+                                                  <column datatype='integer' name='482,803' ordinal='4' />
+                                                  <column datatype='integer' name='531,872' ordinal='5' />
+                                                  <column datatype='integer' name='498,374' ordinal='6' />
+                                                  <column datatype='integer' name='432,572' ordinal='7' />
+                                                  <column datatype='integer' name='490,035' ordinal='8' />
+                                                  <column datatype='integer' name='457,162' ordinal='9' />
+                                                  <column datatype='integer' name='536,302' ordinal='10' />
+                                                  <column datatype='integer' name='450,462' ordinal='11' />
+                                                  <column datatype='integer' name='469,926' ordinal='12' />
+                                                  <column datatype='integer' name='455,871' ordinal='13' />
+                                                  <column datatype='integer' name='443,190' ordinal='14' />
+                                                  <column datatype='integer' name='529,105' ordinal='15' />
+                                                  <column datatype='integer' name='495,729' ordinal='16' />
+                                                </columns>
+                                              </relation>
+                                              <relation connection='pdf.06ptgzo0f02b5m10ah1dz154efax' name='Page   14 Table  3' table='[&apos;Page   14 Table  3$&apos;]' type='table'>
+                                                <columns gridOrigin='A1:Q10:no:A1:Q10:1' lost='0' outcome='1' processed='80'>
+                                                  <column datatype='string' name='Inflow s' ordinal='0' />
+                                                  <column datatype='integer' name='F2' ordinal='1' />
+                                                  <column datatype='integer' name='F3' ordinal='2' />
+                                                  <column datatype='integer' name='F4' ordinal='3' />
+                                                  <column datatype='integer' name='F5' ordinal='4' />
+                                                  <column datatype='integer' name='F6' ordinal='5' />
+                                                  <column datatype='integer' name='F7' ordinal='6' />
+                                                  <column datatype='integer' name='F8' ordinal='7' />
+                                                  <column datatype='integer' name='F9' ordinal='8' />
+                                                  <column datatype='integer' name='F10' ordinal='9' />
+                                                  <column datatype='integer' name='F11' ordinal='10' />
+                                                  <column datatype='integer' name='F12' ordinal='11' />
+                                                  <column datatype='integer' name='F13' ordinal='12' />
+                                                  <column datatype='integer' name='F14' ordinal='13' />
+                                                  <column datatype='integer' name='F15' ordinal='14' />
+                                                  <column datatype='integer' name='F16' ordinal='15' />
+                                                  <column datatype='integer' name='F17' ordinal='16' />
+                                                </columns>
+                                              </relation>
+                                            </relation>
+                                          </relation>
+                                        </relation>
+                                      </relation>
+                                    </relation>
+                                  </relation>
+                                </relation>
+                              </relation>
+                            </relation>
+                          </relation>
+                        </relation>
+                      </relation>
+                    </relation>
+                  </relation>
+                </relation>
+              </relation>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Union]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inflow s &amp; To sea and net abstraction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Inflow s &amp; To sea and net abstraction]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Inflow s &amp; To sea and net abstraction</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='source' datatype='string' name='[Inflow s &amp; To sea and net abstraction]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='year' datatype='integer' name='[Pivot Field Names]' role='dimension' type='ordinal' />
+      <column caption='million cubic meters' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[Table Name]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Union' datatype='table' name='[__tableau_internal_object_id__].[_C37ED02D9E7B4C309FEF61535EC3231A]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <filter class='quantitative' column='[Pivot Field Values]' filter-group='2' included-values='non-null' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Union' id='_C37ED02D9E7B4C309FEF61535EC3231A'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='integer' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[2001]' />
+                  <value name='[2008]' />
+                  <value name='[2005]' />
+                  <value name='[2007]' />
+                  <value name='[2003]' />
+                  <value name='[2006]' />
+                  <value name='[1997]' />
+                  <value name='[1998]' />
+                  <value name='[2002]' />
+                  <value name='[2010]' />
+                  <value name='[2000]' />
+                  <value name='[2009]' />
+                  <value name='[1999]' />
+                  <value name='[2004]' />
+                  <value name='[1995]' />
+                  <value name='[1996]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Project].[432,572 &amp; F8]' />
+                    <field name='[Project].[443,190 &amp; F15]' />
+                    <field name='[Project].[450,462 &amp; F12]' />
+                    <field name='[Project].[455,871 &amp; F14]' />
+                    <field name='[Project].[457,162 &amp; F10]' />
+                    <field name='[Project].[469,926 &amp; F13]' />
+                    <field name='[Project].[476,907 &amp; F4]' />
+                    <field name='[Project].[482,803 &amp; F5]' />
+                    <field name='[Project].[490,035 &amp; F9]' />
+                    <field name='[Project].[495,729 &amp; F17]' />
+                    <field name='[Project].[498,374 &amp; F7]' />
+                    <field name='[Project].[529,105 &amp; F16]' />
+                    <field name='[Project].[531,872 &amp; F6]' />
+                    <field name='[Project].[536,302 &amp; F11]' />
+                    <field name='[Project].[558,532 &amp; F2]' />
+                    <field name='[Project].[574,722 &amp; F3]' />
+                  </group>
+                </groups>
+                <relation type='project'>
+                  <columns>
+                    <column caption='To sea and net abstraction' hidden='true' name='[Union].[To sea and net abstraction]' />
+                    <column caption='Inflow s' hidden='true' name='[Union].[Inflow s]' />
+                    <column name='[Project].[Inflow s &amp; To sea and net abstraction]' project-type='coalesce' />
+                  </columns>
+                  <bindings>
+                    <binding expression='IF NOT ISNULL([Union].[To sea and net abstraction]) THEN [Union].[To sea and net abstraction]&#10;ELSEIF NOT ISNULL([Union].[Inflow s]) THEN [Union].[Inflow s]&#10;ELSE NULL&#10;END' name='[Project].[Inflow s &amp; To sea and net abstraction]' />
+                  </bindings>
+                  <relation type='project'>
+                    <columns>
+                      <column caption='558,532' hidden='true' name='[Union].[558,532]' />
+                      <column caption='F2' hidden='true' name='[Union].[F2]' />
+                      <column name='[Project].[558,532 &amp; F2]' project-type='coalesce' />
+                    </columns>
+                    <bindings>
+                      <binding expression='IF NOT ISNULL([Union].[558,532]) THEN [Union].[558,532]&#10;ELSEIF NOT ISNULL([Union].[F2]) THEN [Union].[F2]&#10;ELSE NULL&#10;END' name='[Project].[558,532 &amp; F2]' />
+                    </bindings>
+                    <relation type='project'>
+                      <columns>
+                        <column caption='574,722' hidden='true' name='[Union].[574,722]' />
+                        <column caption='F3' hidden='true' name='[Union].[F3]' />
+                        <column name='[Project].[574,722 &amp; F3]' project-type='coalesce' />
+                      </columns>
+                      <bindings>
+                        <binding expression='IF NOT ISNULL([Union].[574,722]) THEN [Union].[574,722]&#10;ELSEIF NOT ISNULL([Union].[F3]) THEN [Union].[F3]&#10;ELSE NULL&#10;END' name='[Project].[574,722 &amp; F3]' />
+                      </bindings>
+                      <relation type='project'>
+                        <columns>
+                          <column caption='476,907' hidden='true' name='[Union].[476,907]' />
+                          <column caption='F4' hidden='true' name='[Union].[F4]' />
+                          <column name='[Project].[476,907 &amp; F4]' project-type='coalesce' />
+                        </columns>
+                        <bindings>
+                          <binding expression='IF NOT ISNULL([Union].[476,907]) THEN [Union].[476,907]&#10;ELSEIF NOT ISNULL([Union].[F4]) THEN [Union].[F4]&#10;ELSE NULL&#10;END' name='[Project].[476,907 &amp; F4]' />
+                        </bindings>
+                        <relation type='project'>
+                          <columns>
+                            <column caption='482,803' hidden='true' name='[Union].[482,803]' />
+                            <column caption='F5' hidden='true' name='[Union].[F5]' />
+                            <column name='[Project].[482,803 &amp; F5]' project-type='coalesce' />
+                          </columns>
+                          <bindings>
+                            <binding expression='IF NOT ISNULL([Union].[482,803]) THEN [Union].[482,803]&#10;ELSEIF NOT ISNULL([Union].[F5]) THEN [Union].[F5]&#10;ELSE NULL&#10;END' name='[Project].[482,803 &amp; F5]' />
+                          </bindings>
+                          <relation type='project'>
+                            <columns>
+                              <column caption='531,872' hidden='true' name='[Union].[531,872]' />
+                              <column caption='F6' hidden='true' name='[Union].[F6]' />
+                              <column name='[Project].[531,872 &amp; F6]' project-type='coalesce' />
+                            </columns>
+                            <bindings>
+                              <binding expression='IF NOT ISNULL([Union].[531,872]) THEN [Union].[531,872]&#10;ELSEIF NOT ISNULL([Union].[F6]) THEN [Union].[F6]&#10;ELSE NULL&#10;END' name='[Project].[531,872 &amp; F6]' />
+                            </bindings>
+                            <relation type='project'>
+                              <columns>
+                                <column caption='498,374' hidden='true' name='[Union].[498,374]' />
+                                <column caption='F7' hidden='true' name='[Union].[F7]' />
+                                <column name='[Project].[498,374 &amp; F7]' project-type='coalesce' />
+                              </columns>
+                              <bindings>
+                                <binding expression='IF NOT ISNULL([Union].[498,374]) THEN [Union].[498,374]&#10;ELSEIF NOT ISNULL([Union].[F7]) THEN [Union].[F7]&#10;ELSE NULL&#10;END' name='[Project].[498,374 &amp; F7]' />
+                              </bindings>
+                              <relation type='project'>
+                                <columns>
+                                  <column caption='432,572' hidden='true' name='[Union].[432,572]' />
+                                  <column caption='F8' hidden='true' name='[Union].[F8]' />
+                                  <column name='[Project].[432,572 &amp; F8]' project-type='coalesce' />
+                                </columns>
+                                <bindings>
+                                  <binding expression='IF NOT ISNULL([Union].[432,572]) THEN [Union].[432,572]&#10;ELSEIF NOT ISNULL([Union].[F8]) THEN [Union].[F8]&#10;ELSE NULL&#10;END' name='[Project].[432,572 &amp; F8]' />
+                                </bindings>
+                                <relation type='project'>
+                                  <columns>
+                                    <column caption='490,035' hidden='true' name='[Union].[490,035]' />
+                                    <column caption='F9' hidden='true' name='[Union].[F9]' />
+                                    <column name='[Project].[490,035 &amp; F9]' project-type='coalesce' />
+                                  </columns>
+                                  <bindings>
+                                    <binding expression='IF NOT ISNULL([Union].[490,035]) THEN [Union].[490,035]&#10;ELSEIF NOT ISNULL([Union].[F9]) THEN [Union].[F9]&#10;ELSE NULL&#10;END' name='[Project].[490,035 &amp; F9]' />
+                                  </bindings>
+                                  <relation type='project'>
+                                    <columns>
+                                      <column caption='457,162' hidden='true' name='[Union].[457,162]' />
+                                      <column caption='F10' hidden='true' name='[Union].[F10]' />
+                                      <column name='[Project].[457,162 &amp; F10]' project-type='coalesce' />
+                                    </columns>
+                                    <bindings>
+                                      <binding expression='IF NOT ISNULL([Union].[457,162]) THEN [Union].[457,162]&#10;ELSEIF NOT ISNULL([Union].[F10]) THEN [Union].[F10]&#10;ELSE NULL&#10;END' name='[Project].[457,162 &amp; F10]' />
+                                    </bindings>
+                                    <relation type='project'>
+                                      <columns>
+                                        <column caption='536,302' hidden='true' name='[Union].[536,302]' />
+                                        <column caption='F11' hidden='true' name='[Union].[F11]' />
+                                        <column name='[Project].[536,302 &amp; F11]' project-type='coalesce' />
+                                      </columns>
+                                      <bindings>
+                                        <binding expression='IF NOT ISNULL([Union].[536,302]) THEN [Union].[536,302]&#10;ELSEIF NOT ISNULL([Union].[F11]) THEN [Union].[F11]&#10;ELSE NULL&#10;END' name='[Project].[536,302 &amp; F11]' />
+                                      </bindings>
+                                      <relation type='project'>
+                                        <columns>
+                                          <column caption='450,462' hidden='true' name='[Union].[450,462]' />
+                                          <column caption='F12' hidden='true' name='[Union].[F12]' />
+                                          <column name='[Project].[450,462 &amp; F12]' project-type='coalesce' />
+                                        </columns>
+                                        <bindings>
+                                          <binding expression='IF NOT ISNULL([Union].[450,462]) THEN [Union].[450,462]&#10;ELSEIF NOT ISNULL([Union].[F12]) THEN [Union].[F12]&#10;ELSE NULL&#10;END' name='[Project].[450,462 &amp; F12]' />
+                                        </bindings>
+                                        <relation type='project'>
+                                          <columns>
+                                            <column caption='469,926' hidden='true' name='[Union].[469,926]' />
+                                            <column caption='F13' hidden='true' name='[Union].[F13]' />
+                                            <column name='[Project].[469,926 &amp; F13]' project-type='coalesce' />
+                                          </columns>
+                                          <bindings>
+                                            <binding expression='IF NOT ISNULL([Union].[469,926]) THEN [Union].[469,926]&#10;ELSEIF NOT ISNULL([Union].[F13]) THEN [Union].[F13]&#10;ELSE NULL&#10;END' name='[Project].[469,926 &amp; F13]' />
+                                          </bindings>
+                                          <relation type='project'>
+                                            <columns>
+                                              <column caption='455,871' hidden='true' name='[Union].[455,871]' />
+                                              <column caption='F14' hidden='true' name='[Union].[F14]' />
+                                              <column name='[Project].[455,871 &amp; F14]' project-type='coalesce' />
+                                            </columns>
+                                            <bindings>
+                                              <binding expression='IF NOT ISNULL([Union].[455,871]) THEN [Union].[455,871]&#10;ELSEIF NOT ISNULL([Union].[F14]) THEN [Union].[F14]&#10;ELSE NULL&#10;END' name='[Project].[455,871 &amp; F14]' />
+                                            </bindings>
+                                            <relation type='project'>
+                                              <columns>
+                                                <column caption='443,190' hidden='true' name='[Union].[443,190]' />
+                                                <column caption='F15' hidden='true' name='[Union].[F15]' />
+                                                <column name='[Project].[443,190 &amp; F15]' project-type='coalesce' />
+                                              </columns>
+                                              <bindings>
+                                                <binding expression='IF NOT ISNULL([Union].[443,190]) THEN [Union].[443,190]&#10;ELSEIF NOT ISNULL([Union].[F15]) THEN [Union].[F15]&#10;ELSE NULL&#10;END' name='[Project].[443,190 &amp; F15]' />
+                                              </bindings>
+                                              <relation type='project'>
+                                                <columns>
+                                                  <column caption='529,105' hidden='true' name='[Union].[529,105]' />
+                                                  <column caption='F16' hidden='true' name='[Union].[F16]' />
+                                                  <column name='[Project].[529,105 &amp; F16]' project-type='coalesce' />
+                                                </columns>
+                                                <bindings>
+                                                  <binding expression='IF NOT ISNULL([Union].[529,105]) THEN [Union].[529,105]&#10;ELSEIF NOT ISNULL([Union].[F16]) THEN [Union].[F16]&#10;ELSE NULL&#10;END' name='[Project].[529,105 &amp; F16]' />
+                                                </bindings>
+                                                <relation type='project'>
+                                                  <columns>
+                                                    <column caption='495,729' hidden='true' name='[Union].[495,729]' />
+                                                    <column caption='F17' hidden='true' name='[Union].[F17]' />
+                                                    <column name='[Project].[495,729 &amp; F17]' project-type='coalesce' />
+                                                  </columns>
+                                                  <bindings>
+                                                    <binding expression='IF NOT ISNULL([Union].[495,729]) THEN [Union].[495,729]&#10;ELSEIF NOT ISNULL([Union].[F17]) THEN [Union].[F17]&#10;ELSE NULL&#10;END' name='[Project].[495,729 &amp; F17]' />
+                                                  </bindings>
+                                                  <relation all='true' name='Union' type='union'>
+                                                    <columns>
+                                                      <column datatype='string' name='To sea and net abstraction' />
+                                                      <column datatype='integer' name='558,532' />
+                                                      <column datatype='integer' name='574,722' />
+                                                      <column datatype='integer' name='476,907' />
+                                                      <column datatype='integer' name='482,803' />
+                                                      <column datatype='integer' name='531,872' />
+                                                      <column datatype='integer' name='498,374' />
+                                                      <column datatype='integer' name='432,572' />
+                                                      <column datatype='integer' name='490,035' />
+                                                      <column datatype='integer' name='457,162' />
+                                                      <column datatype='integer' name='536,302' />
+                                                      <column datatype='integer' name='450,462' />
+                                                      <column datatype='integer' name='469,926' />
+                                                      <column datatype='integer' name='455,871' />
+                                                      <column datatype='integer' name='443,190' />
+                                                      <column datatype='integer' name='529,105' />
+                                                      <column datatype='integer' name='495,729' />
+                                                      <column datatype='string' name='Inflow s' />
+                                                      <column datatype='integer' name='F2' />
+                                                      <column datatype='integer' name='F3' />
+                                                      <column datatype='integer' name='F4' />
+                                                      <column datatype='integer' name='F5' />
+                                                      <column datatype='integer' name='F6' />
+                                                      <column datatype='integer' name='F7' />
+                                                      <column datatype='integer' name='F8' />
+                                                      <column datatype='integer' name='F9' />
+                                                      <column datatype='integer' name='F10' />
+                                                      <column datatype='integer' name='F11' />
+                                                      <column datatype='integer' name='F12' />
+                                                      <column datatype='integer' name='F13' />
+                                                      <column datatype='integer' name='F14' />
+                                                      <column datatype='integer' name='F15' />
+                                                      <column datatype='integer' name='F16' />
+                                                      <column datatype='integer' name='F17' />
+                                                      <column datatype='string' name='Table Name' />
+                                                    </columns>
+                                                    <relation connection='pdf.06ptgzo0f02b5m10ah1dz154efax' name='Page   14 Table  2' table='[&apos;Page   14 Table  2$&apos;]' type='table'>
+                                                      <columns gridOrigin='A1:Q9:no:A1:Q9:0' outcome='2'>
+                                                        <column datatype='string' name='To sea and net abstraction' ordinal='0' />
+                                                        <column datatype='integer' name='558,532' ordinal='1' />
+                                                        <column datatype='integer' name='574,722' ordinal='2' />
+                                                        <column datatype='integer' name='476,907' ordinal='3' />
+                                                        <column datatype='integer' name='482,803' ordinal='4' />
+                                                        <column datatype='integer' name='531,872' ordinal='5' />
+                                                        <column datatype='integer' name='498,374' ordinal='6' />
+                                                        <column datatype='integer' name='432,572' ordinal='7' />
+                                                        <column datatype='integer' name='490,035' ordinal='8' />
+                                                        <column datatype='integer' name='457,162' ordinal='9' />
+                                                        <column datatype='integer' name='536,302' ordinal='10' />
+                                                        <column datatype='integer' name='450,462' ordinal='11' />
+                                                        <column datatype='integer' name='469,926' ordinal='12' />
+                                                        <column datatype='integer' name='455,871' ordinal='13' />
+                                                        <column datatype='integer' name='443,190' ordinal='14' />
+                                                        <column datatype='integer' name='529,105' ordinal='15' />
+                                                        <column datatype='integer' name='495,729' ordinal='16' />
+                                                      </columns>
+                                                    </relation>
+                                                    <relation connection='pdf.06ptgzo0f02b5m10ah1dz154efax' name='Page   14 Table  3' table='[&apos;Page   14 Table  3$&apos;]' type='table'>
+                                                      <columns gridOrigin='A1:Q10:no:A1:Q10:1' lost='0' outcome='1' processed='80'>
+                                                        <column datatype='string' name='Inflow s' ordinal='0' />
+                                                        <column datatype='integer' name='F2' ordinal='1' />
+                                                        <column datatype='integer' name='F3' ordinal='2' />
+                                                        <column datatype='integer' name='F4' ordinal='3' />
+                                                        <column datatype='integer' name='F5' ordinal='4' />
+                                                        <column datatype='integer' name='F6' ordinal='5' />
+                                                        <column datatype='integer' name='F7' ordinal='6' />
+                                                        <column datatype='integer' name='F8' ordinal='7' />
+                                                        <column datatype='integer' name='F9' ordinal='8' />
+                                                        <column datatype='integer' name='F10' ordinal='9' />
+                                                        <column datatype='integer' name='F11' ordinal='10' />
+                                                        <column datatype='integer' name='F12' ordinal='11' />
+                                                        <column datatype='integer' name='F13' ordinal='12' />
+                                                        <column datatype='integer' name='F14' ordinal='13' />
+                                                        <column datatype='integer' name='F15' ordinal='14' />
+                                                        <column datatype='integer' name='F16' ordinal='15' />
+                                                        <column datatype='integer' name='F17' ordinal='16' />
+                                                      </columns>
+                                                    </relation>
+                                                  </relation>
+                                                </relation>
+                                              </relation>
+                                            </relation>
+                                          </relation>
+                                        </relation>
+                                      </relation>
+                                    </relation>
+                                  </relation>
+                                </relation>
+                              </relation>
+                            </relation>
+                          </relation>
+                        </relation>
+                      </relation>
+                    </relation>
+                  </relation>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Union+ (nz_water_water_resources)' name='federated.13d8rsc1hnkx1919my5wd1l9utvd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13d8rsc1hnkx1919my5wd1l9utvd'>
+            <column caption='million cubic meters' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.13d8rsc1hnkx1919my5wd1l9utvd].[sum:Pivot Field Values:qk]</cols>
+      </table>
+      <simple-id uuid='{27F89A39-C165-4701-990A-FDD58ED4E78C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='24'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13d8rsc1hnkx1919my5wd1l9utvd].[none:Inflow s &amp; To sea and net abstraction:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6CFE7CCE-C103-42BD-B875-30574E583643}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
